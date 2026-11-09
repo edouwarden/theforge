@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="760" viewBox="0 0 1100 760">
+<rect x="0" y="0" width="1100" height="760" rx="0" fill="#0b0e14" stroke="#0b0e14" stroke-width="1"/>
+<text x="40" y="38" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="bold" fill="#5c6878" text-anchor="start" letter-spacing="2">THE FORGE / CONTEXT ECONOMY</text>
+<text x="40" y="76" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="27" font-weight="bold" fill="#e6edf5" text-anchor="start">Send less, but send the right blocks.</text>
+<text x="40" y="102" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13.5" font-weight="normal" fill="#8b98aa" text-anchor="start">The front and tail are always kept. Only the middle is scored.</text>
+<rect x="40" y="132" width="500" height="460" rx="12" fill="#10151e" stroke="#232b38" stroke-width="1"/>
+<text x="58" y="160" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="bold" fill="#5c6878" text-anchor="start" letter-spacing="1">PROMPT REGIONS</text>
+<rect x="58" y="176" width="464" height="60" rx="8" fill="#12211a" stroke="#2f4a38" stroke-width="1"/>
+<circle cx="76" cy="195" r="3.5" fill="#7ec98f"/>
+<text x="90" y="200" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="bold" fill="#d4ead9" text-anchor="start" letter-spacing="1">FRONT</text>
+<text x="90" y="219" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11.5" font-weight="normal" fill="#d4ead9" text-anchor="start">stack · rules · plan · task</text>
+<text x="510" y="219" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" font-weight="normal" fill="#8b98aa" text-anchor="end">always kept, never scored</text>
+<rect x="58" y="248" width="464" height="60" rx="8" fill="#0f2329" stroke="#2d5f6b" stroke-width="1"/>
+<circle cx="76" cy="267" r="3.5" fill="#6ebed2"/>
+<text x="90" y="272" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="bold" fill="#c9eef3" text-anchor="start" letter-spacing="1">FILES</text>
+<text x="90" y="291" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11.5" font-weight="normal" fill="#c9eef3" text-anchor="start">relevant file blocks</text>
+<text x="510" y="291" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" font-weight="normal" fill="#8b98aa" text-anchor="end">scored, U-curve ordered</text>
+<rect x="58" y="320" width="464" height="60" rx="8" fill="#0f2329" stroke="#2d5f6b" stroke-width="1"/>
+<circle cx="76" cy="339" r="3.5" fill="#6ebed2"/>
+<text x="90" y="344" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="bold" fill="#c9eef3" text-anchor="start" letter-spacing="1">MENTIONS</text>
+<text x="90" y="363" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11.5" font-weight="normal" fill="#c9eef3" text-anchor="start">@file / URL context</text>
+<text x="510" y="363" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" font-weight="normal" fill="#8b98aa" text-anchor="end">scored, U-curve ordered</text>
+<rect x="58" y="392" width="464" height="60" rx="8" fill="#151b26" stroke="#2a3444" stroke-width="1"/>
+<circle cx="76" cy="411" r="3.5" fill="#5c6878"/>
+<text x="90" y="416" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="bold" fill="#c9d3df" text-anchor="start" letter-spacing="1">BODY</text>
+<text x="90" y="435" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11.5" font-weight="normal" fill="#c9d3df" text-anchor="start">thoughts + tool results</text>
+<text x="510" y="435" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" font-weight="normal" fill="#8b98aa" text-anchor="end">original order, latest last</text>
+<rect x="58" y="464" width="464" height="60" rx="8" fill="#12211a" stroke="#2f4a38" stroke-width="1"/>
+<circle cx="76" cy="483" r="3.5" fill="#7ec98f"/>
+<text x="90" y="488" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11.5" font-weight="bold" fill="#d4ead9" text-anchor="start" letter-spacing="1">TAIL</text>
+<text x="90" y="507" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11.5" font-weight="normal" fill="#d4ead9" text-anchor="start">the last tool call</text>
+<text x="510" y="507" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" font-weight="normal" fill="#8b98aa" text-anchor="end">always kept, never scored</text>
+<text x="58" y="556" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="normal" fill="#8b98aa" text-anchor="start">Short blocks are removed before scoring. Failures, security findings</text>
+<text x="58" y="574" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="normal" fill="#8b98aa" text-anchor="start">and the latest think/tool work are always preserved.</text>
+<rect x="560" y="132" width="500" height="460" rx="12" fill="#10151e" stroke="#232b38" stroke-width="1"/>
+<text x="578" y="160" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="bold" fill="#5c6878" text-anchor="start" letter-spacing="1">JEV SCORING</text>
+<text x="578" y="188" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11.5" font-weight="normal" fill="#e6edf5" text-anchor="start">Each surviving block gets a relevance score from 0 to 1.</text>
+<text x="578" y="206" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11.5" font-weight="normal" fill="#e6edf5" text-anchor="start">Blocks at or below 0.5 are dropped; the rest are ordered.</text>
+<text x="580" y="218" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.5" font-weight="normal" fill="#e07a7a" text-anchor="start">drop</text>
+<text x="1040" y="218" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.5" font-weight="normal" fill="#6ebed2" text-anchor="end">keep</text>
+<rect x="578" y="226" width="232.0" height="16" rx="4" fill="#1c1114" stroke="#5a2f35" stroke-width="1"/>
+<rect x="810.0" y="226" width="232.0" height="16" rx="4" fill="#0f2329" stroke="#2d5f6b" stroke-width="1"/>
+<line x1="810.0" y1="221" x2="810.0" y2="247" stroke="#e6edf5" stroke-width="1.5"/>
+<text x="578" y="260" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="normal" fill="#5c6878" text-anchor="start">0</text>
+<text x="810.0" y="260" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="bold" fill="#e6edf5" text-anchor="middle">0.5</text>
+<text x="1042" y="260" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="normal" fill="#5c6878" text-anchor="end">1.0</text>
+<text x="578" y="296" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="bold" fill="#5c6878" text-anchor="start" letter-spacing="1">U-CURVE ORDER</text>
+<rect x="590" y="336" width="30" height="112" rx="4" fill="#6ebed2" opacity="0.85"/>
+<rect x="640" y="354" width="30" height="94" rx="4" fill="#6ebed2" opacity="0.85"/>
+<rect x="690" y="374" width="30" height="74" rx="4" fill="#6ebed2" opacity="0.85"/>
+<rect x="740" y="402" width="30" height="46" rx="4" fill="#5c6878" opacity="0.85"/>
+<rect x="790" y="420" width="30" height="28" rx="4" fill="#5c6878" opacity="0.85"/>
+<rect x="840" y="402" width="30" height="46" rx="4" fill="#5c6878" opacity="0.85"/>
+<rect x="890" y="374" width="30" height="74" rx="4" fill="#6ebed2" opacity="0.85"/>
+<rect x="940" y="354" width="30" height="94" rx="4" fill="#6ebed2" opacity="0.85"/>
+<rect x="990" y="336" width="30" height="112" rx="4" fill="#6ebed2" opacity="0.85"/>
+<line x1="578" y1="450" x2="1048" y2="450" stroke="#232b38" stroke-width="1"/>
+<text x="590" y="474" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="normal" fill="#6ebed2" text-anchor="start">high</text>
+<text x="838" y="474" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="normal" fill="#5c6878" text-anchor="middle">low</text>
+<text x="1048" y="474" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="normal" fill="#6ebed2" text-anchor="end">high</text>
+<text x="578" y="506" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#8b98aa" text-anchor="start">Strongest blocks sit at both ends, not in the middle.</text>
+<text x="578" y="542" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="normal" fill="#8b98aa" text-anchor="start">JEV is advisory. If it is off, slow or wrong, the original order</text>
+<text x="578" y="560" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="normal" fill="#8b98aa" text-anchor="start">is kept and nothing extra is dropped.</text>
+<rect x="40" y="612" width="1020" height="76" rx="10" fill="#0e131c" stroke="#232b38" stroke-width="1"/>
+<circle cx="62" cy="638" r="3.5" fill="#6ebed2"/>
+<text x="76" y="642" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11.5" font-weight="normal" fill="#e6edf5" text-anchor="start">Cleanup runs only at ≥70k estimated tokens. It re-arms below 65k or after 10k of new context.</text>
+<circle cx="62" cy="666" r="3.5" fill="#d6ba78"/>
+<text x="76" y="670" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11.5" font-weight="normal" fill="#8b98aa" text-anchor="start">In the recorded demo run, JEV was disabled. The deterministic budget, guards and gates did the work.</text>
+<text x="40" y="726" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.5" font-weight="normal" fill="#5c6878" text-anchor="start">The JEV rubric, prompts and weights remain private. The fallback behaviour is public.</text>
+</svg>

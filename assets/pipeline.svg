@@ -1,0 +1,209 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="980" viewBox="0 0 1200 980">
+<rect x="0" y="0" width="1200" height="980" rx="0" fill="#0b0e14" stroke="#0b0e14" stroke-width="1"/>
+<text x="48" y="42" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="bold" fill="#5c6878" text-anchor="start" letter-spacing="2.4">THE FORGE / CONTROL PIPELINE</text>
+<text x="48" y="84" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="27" font-weight="bold" fill="#e6edf5" text-anchor="start">A request becomes a validated change.</text>
+<text x="48" y="110" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="14" font-weight="normal" fill="#8b98aa" text-anchor="start">Five stages. The model is called only where judgement is needed.</text>
+<rect x="720" y="26" width="140" height="74" rx="10" fill="#10151e" stroke="#232b38" stroke-width="1"/>
+<text x="736" y="58" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="25" font-weight="bold" fill="#6ebed2" text-anchor="start">6</text>
+<text x="736" y="82" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="normal" fill="#8b98aa" text-anchor="start">model-served steps</text>
+<rect x="872" y="26" width="140" height="74" rx="10" fill="#10151e" stroke="#232b38" stroke-width="1"/>
+<text x="888" y="58" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="25" font-weight="bold" fill="#7ec98f" text-anchor="start">22</text>
+<text x="888" y="82" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="normal" fill="#8b98aa" text-anchor="start">tools + gates</text>
+<rect x="1024" y="26" width="140" height="74" rx="10" fill="#10151e" stroke="#232b38" stroke-width="1"/>
+<text x="1040" y="58" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="25" font-weight="bold" fill="#d6ba78" text-anchor="start">21/21</text>
+<text x="1040" y="82" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="normal" fill="#8b98aa" text-anchor="start">checks passed</text>
+<rect x="48" y="130" width="752" height="112" rx="14" fill="#10151e" stroke="#232b38" stroke-width="1"/>
+<rect x="48" y="130" width="4" height="112" rx="2" fill="#7ec98f" stroke="#7ec98f" stroke-width="1"/>
+<text x="70" y="162" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="bold" fill="#7ec98f" text-anchor="start" letter-spacing="1.2">0</text>
+<text x="100" y="163" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="bold" fill="#e6edf5" text-anchor="start">ENV</text>
+<text x="100" y="181" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="normal" fill="#8b98aa" text-anchor="start">Workspace setup</text>
+<rect x="610" y="146" width="107.60000000000001" height="24" rx="12" fill="#12211a" stroke="#2f4a38" stroke-width="1"/><text x="620" y="162" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="bold" fill="#7ec98f" text-anchor="start">DETERMINISTIC</text>
+<text x="70" y="202" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11.5" font-weight="normal" fill="#c9d3df" text-anchor="start">Create an isolated workspace, then build and test the untouched baseline.</text>
+<text x="70" y="220" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11.5" font-weight="normal" fill="#8b98aa" text-anchor="start">A failing baseline is caught before the model touches the tree.</text>
+<text x="70" y="238" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.8" font-weight="normal" fill="#5c6878" text-anchor="start">jj workspace  ·  cargo check  ·  cargo test  ·  baseline recorded</text>
+<rect x="48" y="254" width="752" height="130" rx="14" fill="#10151e" stroke="#232b38" stroke-width="1"/>
+<rect x="48" y="254" width="4" height="130" rx="2" fill="#6ebed2" stroke="#6ebed2" stroke-width="1"/>
+<text x="70" y="286" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="bold" fill="#6ebed2" text-anchor="start" letter-spacing="1.2">1</text>
+<text x="100" y="287" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="bold" fill="#e6edf5" text-anchor="start">PLAN</text>
+<text x="100" y="305" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="normal" fill="#8b98aa" text-anchor="start">BMAD method</text>
+<rect x="610" y="270" width="86.0" height="24" rx="12" fill="#0f2329" stroke="#2d5f6b" stroke-width="1"/><text x="620" y="286" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="bold" fill="#6ebed2" text-anchor="start">MODEL CALL</text>
+<text x="70" y="328" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11.5" font-weight="normal" fill="#c9d3df" text-anchor="start">Brief → spec → architecture → tasks, then a strict YAML plan.</text>
+<text x="70" y="346" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="normal" fill="#8b98aa" text-anchor="start">A plan that does not parse fails before code exists. The plan is the contract.</text>
+<rect x="70" y="360" width="124" height="26" rx="6" fill="#181326" stroke="#3d3358" stroke-width="1"/>
+<text x="80" y="377" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="bold" fill="#a48ad2" text-anchor="start">BRIEF</text>
+<text x="197" y="377" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="normal" fill="#5c6878" text-anchor="start">→</text>
+<rect x="212" y="360" width="124" height="26" rx="6" fill="#181326" stroke="#3d3358" stroke-width="1"/>
+<text x="222" y="377" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="bold" fill="#a48ad2" text-anchor="start">SPEC</text>
+<text x="339" y="377" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="normal" fill="#5c6878" text-anchor="start">→</text>
+<rect x="354" y="360" width="124" height="26" rx="6" fill="#181326" stroke="#3d3358" stroke-width="1"/>
+<text x="364" y="377" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="bold" fill="#a48ad2" text-anchor="start">ARCHITECTURE</text>
+<text x="481" y="377" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="normal" fill="#5c6878" text-anchor="start">→</text>
+<rect x="496" y="360" width="124" height="26" rx="6" fill="#181326" stroke="#3d3358" stroke-width="1"/>
+<text x="506" y="377" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="bold" fill="#a48ad2" text-anchor="start">TASKS</text>
+<text x="623" y="377" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11" font-weight="normal" fill="#5c6878" text-anchor="start">→</text>
+<rect x="638" y="360" width="124" height="26" rx="6" fill="#0f2329" stroke="#2d5f6b" stroke-width="1"/>
+<text x="648" y="377" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9" font-weight="bold" fill="#6ebed2" text-anchor="start">YAML PLAN</text>
+<rect x="48" y="396" width="752" height="180" rx="14" fill="#10151e" stroke="#232b38" stroke-width="1"/>
+<rect x="48" y="396" width="4" height="180" rx="2" fill="#d6ba78" stroke="#d6ba78" stroke-width="1"/>
+<text x="70" y="428" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="bold" fill="#d6ba78" text-anchor="start" letter-spacing="1.2">2</text>
+<text x="100" y="429" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="bold" fill="#e6edf5" text-anchor="start">BUILD</text>
+<text x="100" y="447" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="normal" fill="#8b98aa" text-anchor="start">Coder loop + test generation</text>
+<rect x="610" y="412" width="165.20000000000002" height="24" rx="12" fill="#1a1710" stroke="#4a3f2a" stroke-width="1"/><text x="620" y="428" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="bold" fill="#d6ba78" text-anchor="start">2 MODEL CALLS + GATES</text>
+<text x="70" y="472" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11.5" font-weight="normal" fill="#c9d3df" text-anchor="start">The model implements one task. Build and test decide whether the loop continues.</text>
+<text x="70" y="490" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="normal" fill="#8b98aa" text-anchor="start">A pass exits to HARDEN; a failure is fed back as context, not a crash.</text>
+<rect x="218" y="500" width="142" height="42" rx="8" fill="#1a1710" stroke="#4a3f2a" stroke-width="1"/>
+<text x="228" y="518" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.2" font-weight="bold" fill="#e8dcc0" text-anchor="start">3.1 CODER</text>
+<text x="228" y="533" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.2" font-weight="normal" fill="#8b98aa" text-anchor="start">write the change</text>
+<rect x="394" y="500" width="142" height="42" rx="8" fill="#12211a" stroke="#2f4a38" stroke-width="1"/>
+<text x="404" y="518" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.2" font-weight="bold" fill="#d4ead9" text-anchor="start">3.3 BUILD</text>
+<text x="404" y="533" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.2" font-weight="normal" fill="#8b98aa" text-anchor="start">compile</text>
+<rect x="570" y="500" width="142" height="42" rx="8" fill="#12211a" stroke="#2f4a38" stroke-width="1"/>
+<text x="580" y="518" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.2" font-weight="bold" fill="#d4ead9" text-anchor="start">3.5 TEST</text>
+<text x="580" y="533" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.2" font-weight="normal" fill="#8b98aa" text-anchor="start">run tests</text>
+<line x1="360" y1="521" x2="386.0" y2="521.0" stroke="#232b38" stroke-width="1.5"/><path d="M 386.0 525.5 L 394 521 L 386.0 516.5 Z" fill="#232b38"/>
+<line x1="536" y1="521" x2="562.0" y2="521.0" stroke="#232b38" stroke-width="1.5"/><path d="M 562.0 525.5 L 570 521 L 562.0 516.5 Z" fill="#232b38"/>
+<path d="M 641 542 L 641 558 L 289 558 L 289 544" fill="none" stroke="#e07a7a" stroke-width="1.4" stroke-dasharray="4 4"/>
+<path d="M 284 552 L 289 543 L 294 552 Z" fill="#e07a7a"/>
+<text x="348" y="574" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.8" font-weight="normal" fill="#e07a7a" text-anchor="start">fail → back to the coder with the error</text>
+<rect x="48" y="588" width="752" height="156" rx="14" fill="#10151e" stroke="#232b38" stroke-width="1"/>
+<rect x="48" y="588" width="4" height="156" rx="2" fill="#a48ad2" stroke="#a48ad2" stroke-width="1"/>
+<text x="70" y="620" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="bold" fill="#a48ad2" text-anchor="start" letter-spacing="1.2">3</text>
+<text x="100" y="621" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="bold" fill="#e6edf5" text-anchor="start">HARDEN</text>
+<text x="100" y="639" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="normal" fill="#8b98aa" text-anchor="start">Clean-code refactor + security</text>
+<rect x="610" y="604" width="165.20000000000002" height="24" rx="12" fill="#181326" stroke="#3d3358" stroke-width="1"/><text x="620" y="620" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="bold" fill="#a48ad2" text-anchor="start">3 MODEL CALLS + GATES</text>
+<text x="70" y="658" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11.5" font-weight="normal" fill="#c9d3df" text-anchor="start">A second pass improves the change, then independent checks try to break it.</text>
+<text x="70" y="676" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="normal" fill="#8b98aa" text-anchor="start">Refactor, behaviour check, end-to-end tests, intent audit, security scan.</text>
+<rect x="70" y="686" width="130" height="42" rx="8" fill="#0f2329" stroke="#2d5f6b" stroke-width="1"/>
+<text x="80" y="703" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.8" font-weight="bold" fill="#c9eef3" text-anchor="start">4.2 REFACTOR</text>
+<text x="80" y="719" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.2" font-weight="normal" fill="#8b98aa" text-anchor="start">clean code</text>
+<line x1="200" y1="707" x2="206.0" y2="707.0" stroke="#232b38" stroke-width="1.5"/><path d="M 206.0 711.5 L 214 707 L 206.0 702.5 Z" fill="#232b38"/>
+<rect x="214" y="686" width="130" height="42" rx="8" fill="#12211a" stroke="#2f4a38" stroke-width="1"/>
+<text x="224" y="703" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.8" font-weight="bold" fill="#d4ead9" text-anchor="start">4.3 BEHAV</text>
+<text x="224" y="719" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.2" font-weight="normal" fill="#8b98aa" text-anchor="start">behaviour</text>
+<line x1="344" y1="707" x2="350.0" y2="707.0" stroke="#232b38" stroke-width="1.5"/><path d="M 350.0 711.5 L 358 707 L 350.0 702.5 Z" fill="#232b38"/>
+<rect x="358" y="686" width="130" height="42" rx="8" fill="#0f2329" stroke="#2d5f6b" stroke-width="1"/>
+<text x="368" y="703" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.8" font-weight="bold" fill="#c9eef3" text-anchor="start">5.1 E2E</text>
+<text x="368" y="719" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.2" font-weight="normal" fill="#8b98aa" text-anchor="start">end to end</text>
+<line x1="488" y1="707" x2="494.0" y2="707.0" stroke="#232b38" stroke-width="1.5"/><path d="M 494.0 711.5 L 502 707 L 494.0 702.5 Z" fill="#232b38"/>
+<rect x="502" y="686" width="130" height="42" rx="8" fill="#0f2329" stroke="#2d5f6b" stroke-width="1"/>
+<text x="512" y="703" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.8" font-weight="bold" fill="#c9eef3" text-anchor="start">6.5 INTENT</text>
+<text x="512" y="719" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.2" font-weight="normal" fill="#8b98aa" text-anchor="start">did it do it?</text>
+<line x1="632" y1="707" x2="638.0" y2="707.0" stroke="#232b38" stroke-width="1.5"/><path d="M 638.0 711.5 L 646 707 L 638.0 702.5 Z" fill="#232b38"/>
+<rect x="646" y="686" width="130" height="42" rx="8" fill="#12211a" stroke="#2f4a38" stroke-width="1"/>
+<text x="656" y="703" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.8" font-weight="bold" fill="#d4ead9" text-anchor="start">6.1 SECURITY</text>
+<text x="656" y="719" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.2" font-weight="normal" fill="#8b98aa" text-anchor="start">scan</text>
+<rect x="48" y="756" width="752" height="150" rx="14" fill="#10151e" stroke="#232b38" stroke-width="1"/>
+<rect x="48" y="756" width="4" height="150" rx="2" fill="#7ec98f" stroke="#7ec98f" stroke-width="1"/>
+<text x="70" y="788" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="bold" fill="#7ec98f" text-anchor="start" letter-spacing="1.2">4</text>
+<text x="100" y="789" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="18" font-weight="bold" fill="#e6edf5" text-anchor="start">INTEGRATE</text>
+<text x="100" y="807" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10.5" font-weight="normal" fill="#8b98aa" text-anchor="start">Queue + shadow validation</text>
+<rect x="610" y="772" width="107.60000000000001" height="24" rx="12" fill="#12211a" stroke="#2f4a38" stroke-width="1"/><text x="620" y="788" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="bold" fill="#7ec98f" text-anchor="start">DETERMINISTIC</text>
+<text x="70" y="826" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11.5" font-weight="normal" fill="#c9d3df" text-anchor="start">One writer to main. Build on a shadow branch first, then land and validate.</text>
+<rect x="70" y="840" width="130" height="42" rx="8" fill="#12211a" stroke="#2f4a38" stroke-width="1"/>
+<text x="80" y="857" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.8" font-weight="bold" fill="#d4ead9" text-anchor="start">7.1 QUEUE</text>
+<text x="80" y="873" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.2" font-weight="normal" fill="#8b98aa" text-anchor="start">serialize</text>
+<line x1="200" y1="861" x2="206.0" y2="861.0" stroke="#232b38" stroke-width="1.5"/><path d="M 206.0 865.5 L 214 861 L 206.0 856.5 Z" fill="#232b38"/>
+<rect x="214" y="840" width="130" height="42" rx="8" fill="#12211a" stroke="#2f4a38" stroke-width="1"/>
+<text x="224" y="857" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.8" font-weight="bold" fill="#d4ead9" text-anchor="start">7.2 SHADOW</text>
+<text x="224" y="873" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.2" font-weight="normal" fill="#8b98aa" text-anchor="start">sync + build</text>
+<line x1="344" y1="861" x2="350.0" y2="861.0" stroke="#232b38" stroke-width="1.5"/><path d="M 350.0 865.5 L 358 861 L 350.0 856.5 Z" fill="#232b38"/>
+<rect x="358" y="840" width="130" height="42" rx="8" fill="#12211a" stroke="#2f4a38" stroke-width="1"/>
+<text x="368" y="857" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.8" font-weight="bold" fill="#d4ead9" text-anchor="start">7.5 LOCK+MOVE</text>
+<text x="368" y="873" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.2" font-weight="normal" fill="#8b98aa" text-anchor="start">hash lock</text>
+<line x1="488" y1="861" x2="494.0" y2="861.0" stroke="#232b38" stroke-width="1.5"/><path d="M 494.0 865.5 L 502 861 L 494.0 856.5 Z" fill="#232b38"/>
+<rect x="502" y="840" width="130" height="42" rx="8" fill="#12211a" stroke="#2f4a38" stroke-width="1"/>
+<text x="512" y="857" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.8" font-weight="bold" fill="#d4ead9" text-anchor="start">7.6 TEST MAIN</text>
+<text x="512" y="873" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.2" font-weight="normal" fill="#8b98aa" text-anchor="start">build + e2e</text>
+<line x1="632" y1="861" x2="638.0" y2="861.0" stroke="#232b38" stroke-width="1.5"/><path d="M 638.0 865.5 L 646 861 L 638.0 856.5 Z" fill="#232b38"/>
+<rect x="646" y="840" width="130" height="42" rx="8" fill="#12211a" stroke="#2f4a38" stroke-width="1"/>
+<text x="656" y="857" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.8" font-weight="bold" fill="#d4ead9" text-anchor="start">7.10 PUSH</text>
+<text x="656" y="873" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.2" font-weight="normal" fill="#8b98aa" text-anchor="start">unlock</text>
+<text x="70" y="892" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.8" font-weight="normal" fill="#e07a7a" text-anchor="start">A failure on main reverts to the pre-landing hash and returns the work to the fixer.</text>
+<line x1="424.0" y1="242" x2="424.0" y2="246.0" stroke="#232b38" stroke-width="1.5"/><path d="M 419.5 246.0 L 424.0 254 L 428.5 246.0 Z" fill="#232b38"/>
+<line x1="424.0" y1="384" x2="424.0" y2="388.0" stroke="#232b38" stroke-width="1.5"/><path d="M 419.5 388.0 L 424.0 396 L 428.5 388.0 Z" fill="#232b38"/>
+<line x1="424.0" y1="576" x2="424.0" y2="580.0" stroke="#232b38" stroke-width="1.5"/><path d="M 419.5 580.0 L 424.0 588 L 428.5 580.0 Z" fill="#232b38"/>
+<line x1="424.0" y1="744" x2="424.0" y2="748.0" stroke="#232b38" stroke-width="1.5"/><path d="M 419.5 748.0 L 424.0 756 L 428.5 748.0 Z" fill="#232b38"/>
+<rect x="828" y="130" width="324" height="286" rx="14" fill="#10151e" stroke="#232b38" stroke-width="1"/>
+<text x="848" y="160" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="bold" fill="#d6ba78" text-anchor="start" letter-spacing="1.2">WHY WAIT TO TEST ON MAIN?</text>
+<text x="848" y="184" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="bold" fill="#e6edf5" text-anchor="start">The workspace is not the product.</text>
+<text x="848" y="204" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#8b98aa" text-anchor="start">Testing there hides three failure modes:</text>
+<rect x="848" y="224" width="22" height="22" rx="11" fill="#1a1710" stroke="#4a3f2a" stroke-width="1"/>
+<text x="859" y="239" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="bold" fill="#d6ba78" text-anchor="middle">1</text>
+<text x="880" y="238" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11.5" font-weight="bold" fill="#e6edf5" text-anchor="start">No duplicate runtime.</text>
+<text x="880" y="254" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" font-weight="normal" fill="#8b98aa" text-anchor="start">A second runtime competes for</text>
+<text x="880" y="268" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" font-weight="normal" fill="#8b98aa" text-anchor="start">the same resources.</text>
+<rect x="848" y="282" width="22" height="22" rx="11" fill="#1a1710" stroke="#4a3f2a" stroke-width="1"/>
+<text x="859" y="297" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="bold" fill="#d6ba78" text-anchor="middle">2</text>
+<text x="880" y="296" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11.5" font-weight="bold" fill="#e6edf5" text-anchor="start">The database stays intact.</text>
+<text x="880" y="312" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" font-weight="normal" fill="#8b98aa" text-anchor="start">Tests on main use the real schema;</text>
+<text x="880" y="326" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" font-weight="normal" fill="#8b98aa" text-anchor="start">a workspace run must not mutate it.</text>
+<rect x="848" y="340" width="22" height="22" rx="11" fill="#1a1710" stroke="#4a3f2a" stroke-width="1"/>
+<text x="859" y="355" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="bold" fill="#d6ba78" text-anchor="middle">3</text>
+<text x="880" y="354" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11.5" font-weight="bold" fill="#e6edf5" text-anchor="start">No overlapping test runs.</text>
+<text x="880" y="370" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" font-weight="normal" fill="#8b98aa" text-anchor="start">The lock serializes writers, so</text>
+<text x="880" y="384" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="10" font-weight="normal" fill="#8b98aa" text-anchor="start">two runs cannot interfere.</text>
+<text x="848" y="404" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.8" font-weight="normal" fill="#7ec98f" text-anchor="start">Shadow first. Lock, move, validate, revert on failure.</text>
+<rect x="828" y="430" width="324" height="214" rx="14" fill="#10151e" stroke="#232b38" stroke-width="1"/>
+<text x="848" y="460" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="bold" fill="#d6ba78" text-anchor="start" letter-spacing="1.2">THE CODER LOOP</text>
+<text x="848" y="484" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="bold" fill="#e6edf5" text-anchor="start">The model writes. Gates decide.</text>
+<text x="848" y="506" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#8b98aa" text-anchor="start">One task, one tool loop, bounded retries.</text>
+<rect x="848" y="526" width="82" height="42" rx="7" fill="#0f2329" stroke="#2d5f6b" stroke-width="1"/>
+<text x="857" y="543" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="bold" fill="#6ebed2" text-anchor="start">CODER</text>
+<text x="857" y="559" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9" font-weight="normal" fill="#8b98aa" text-anchor="start">model</text>
+<line x1="930" y1="547" x2="936.0" y2="547.0" stroke="#232b38" stroke-width="1.5"/><path d="M 936.0 551.5 L 944 547 L 936.0 542.5 Z" fill="#232b38"/>
+<rect x="944" y="526" width="82" height="42" rx="7" fill="#12211a" stroke="#2f4a38" stroke-width="1"/>
+<text x="953" y="543" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="bold" fill="#7ec98f" text-anchor="start">BUILD</text>
+<text x="953" y="559" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9" font-weight="normal" fill="#8b98aa" text-anchor="start">gate</text>
+<line x1="1026" y1="547" x2="1032.0" y2="547.0" stroke="#232b38" stroke-width="1.5"/><path d="M 1032.0 551.5 L 1040 547 L 1032.0 542.5 Z" fill="#232b38"/>
+<rect x="1040" y="526" width="82" height="42" rx="7" fill="#12211a" stroke="#2f4a38" stroke-width="1"/>
+<text x="1049" y="543" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10" font-weight="bold" fill="#7ec98f" text-anchor="start">TEST</text>
+<text x="1049" y="559" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9" font-weight="normal" fill="#8b98aa" text-anchor="start">gate</text>
+<path d="M 1082 568 L 1082 586 L 889 586 L 889 570" fill="none" stroke="#e07a7a" stroke-width="1.4" stroke-dasharray="4 4"/>
+<path d="M 884 578 L 889 569 L 894 578 Z" fill="#e07a7a"/>
+<text x="920" y="602" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="normal" fill="#e07a7a" text-anchor="start">fail → retry</text>
+<text x="848" y="628" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.5" font-weight="normal" fill="#8b98aa" text-anchor="start">No prompt on a gate. A gate cannot be talked out of a failure.</text>
+<rect x="828" y="658" width="324" height="248" rx="14" fill="#10151e" stroke="#232b38" stroke-width="1"/>
+<text x="848" y="688" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="10.5" font-weight="bold" fill="#7ec98f" text-anchor="start" letter-spacing="1.2">WHAT IS DETERMINISTIC</text>
+<text x="848" y="712" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="15" font-weight="bold" fill="#e6edf5" text-anchor="start">22 of 28 steps call no model.</text>
+<text x="848" y="732" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="11" font-weight="normal" fill="#8b98aa" text-anchor="start">They send no prompt and grow no context.</text>
+<text x="848" y="748" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="normal" fill="#5c6878" text-anchor="start">Examples:</text>
+<circle cx="852" cy="765" r="2.5" fill="#7ec98f"/>
+<text x="860" y="768" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.2" font-weight="normal" fill="#c9d3df" text-anchor="start">baseline</text>
+<circle cx="952" cy="765" r="2.5" fill="#7ec98f"/>
+<text x="960" y="768" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.2" font-weight="normal" fill="#c9d3df" text-anchor="start">compile</text>
+<circle cx="1052" cy="765" r="2.5" fill="#7ec98f"/>
+<text x="1060" y="768" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.2" font-weight="normal" fill="#c9d3df" text-anchor="start">test run</text>
+<circle cx="852" cy="787" r="2.5" fill="#7ec98f"/>
+<text x="860" y="790" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.2" font-weight="normal" fill="#c9d3df" text-anchor="start">security scan</text>
+<circle cx="952" cy="787" r="2.5" fill="#7ec98f"/>
+<text x="960" y="790" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.2" font-weight="normal" fill="#c9d3df" text-anchor="start">tree index</text>
+<circle cx="1052" cy="787" r="2.5" fill="#7ec98f"/>
+<text x="1060" y="790" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.2" font-weight="normal" fill="#c9d3df" text-anchor="start">commit</text>
+<circle cx="852" cy="809" r="2.5" fill="#7ec98f"/>
+<text x="860" y="812" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.2" font-weight="normal" fill="#c9d3df" text-anchor="start">test parse</text>
+<circle cx="952" cy="809" r="2.5" fill="#7ec98f"/>
+<text x="960" y="812" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.2" font-weight="normal" fill="#c9d3df" text-anchor="start">build + test</text>
+<circle cx="1052" cy="809" r="2.5" fill="#7ec98f"/>
+<text x="1060" y="812" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.2" font-weight="normal" fill="#c9d3df" text-anchor="start">queue</text>
+<circle cx="852" cy="831" r="2.5" fill="#7ec98f"/>
+<text x="860" y="834" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.2" font-weight="normal" fill="#c9d3df" text-anchor="start">shadow sync</text>
+<circle cx="952" cy="831" r="2.5" fill="#7ec98f"/>
+<text x="960" y="834" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.2" font-weight="normal" fill="#c9d3df" text-anchor="start">shadow build</text>
+<circle cx="1052" cy="831" r="2.5" fill="#7ec98f"/>
+<text x="1060" y="834" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.2" font-weight="normal" fill="#c9d3df" text-anchor="start">hash lock</text>
+<circle cx="852" cy="853" r="2.5" fill="#7ec98f"/>
+<text x="860" y="856" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.2" font-weight="normal" fill="#c9d3df" text-anchor="start">main validate</text>
+<circle cx="952" cy="853" r="2.5" fill="#7ec98f"/>
+<text x="960" y="856" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.2" font-weight="normal" fill="#c9d3df" text-anchor="start">security re-check</text>
+<circle cx="1052" cy="853" r="2.5" fill="#7ec98f"/>
+<text x="1060" y="856" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.2" font-weight="normal" fill="#c9d3df" text-anchor="start">push + log</text>
+<text x="848" y="878" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9.5" font-weight="normal" fill="#d6ba78" text-anchor="start">A gate guarantees the check ran, not that the code is good.</text>
+<line x1="48" y1="934" x2="1152" y2="934" stroke="#232b38" stroke-width="1"/>
+<text x="48" y="956" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="9.5" font-weight="normal" fill="#5c6878" text-anchor="start">Drawn from run-20261028-095922  ·  28 steps  ·  21 LLM calls  ·  6 model-served steps  ·  22 deterministic tools and gates</text>
+<circle cx="1000" cy="953" r="3" fill="#6ebed2"/>
+<text x="1010" y="956" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9" font-weight="normal" fill="#5c6878" text-anchor="start">model</text>
+<circle cx="1070" cy="953" r="3" fill="#7ec98f"/>
+<text x="1080" y="956" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9" font-weight="normal" fill="#5c6878" text-anchor="start">gate/tool</text>
+<circle cx="1158" cy="953" r="3" fill="#d6ba78"/>
+<text x="1168" y="956" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="9" font-weight="normal" fill="#5c6878" text-anchor="start">loop</text>
+</svg>

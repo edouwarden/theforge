@@ -1,0 +1,22 @@
+The Forge — public slice
+==============================================
+
+This repository publishes the architecture, selected control code, a reduced
+demo pipeline, a recorded demo and evidence for portfolio and
+defensive-disclosure purposes. The public pipeline is a subset of the full one:
+the major stages plus one deterministic stage, not the full step table.
+
+It does not publish, and does not grant any licence to, the private
+implementation: the full pipeline and its tuned control policies, the
+integration machinery, the scoring rubric, model routing, retry tuning, the
+evaluation corpus, hidden tests or golden transcripts remain private. Prompts
+and prompt fragments are also not published.
+
+The demo was produced from a real unattended run. Absolute paths in the captured
+TUI frames were redacted before rendering. No user data, credentials or private
+repository contents are included.
+
+Third-party names and trademarks mentioned in this repository belong to their
+respective owners. Mention does not imply endorsement.
+
+See LICENSE for the terms that apply to this repository.
